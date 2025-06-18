@@ -1,16 +1,35 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div>
-        <h3>HOME</h3>
-      </div>
-      <div>
-        <h3>AWAY</h3>
-      </div>
-    </div>
-    <script src="index.js"></script>
-  </body>
+    <head>
+        <link rel='stylesheet' href="index.css">
+    </head>
+    <body>
+        <div id='container'>
+            <div id='home-container'>
+                <h1>HOME</h1>
+                <div class='score'>
+                    <p id='home-score'>0</p>
+                </div>
+                <div class='button-container'>
+                <button class='plus1' onclick="homeOne()">+1</button>
+                <button class='plus2' onclick="homeTwo()">+2</button>
+                <button class='plus3' onclick="homeThree()">+3</button>
+                </div>
+                <button class='clear' onclick="homeClear()">Clear</button>
+            </div>
+            <div id='away-container'>
+                <h1>AWAY</h1>
+                <div class='score'>
+                    <p id='away-score'>0</p>
+                </div>
+                <div class='button-container'>
+                <button class='plus1' onclick="awayOne()">+1</button>
+                <button class='plus2' onclick="awayTwo()">+2</button>
+                <button class='plus3' onclick="awayThree()">+3</button>
+                </div>
+                <button class='clear' onclick="awayClear()">Clear</button>
+            </div>
+        </div>
+        <script src='index.js'></script>
+    </body>
 </html>
